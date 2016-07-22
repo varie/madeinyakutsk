@@ -1,0 +1,159 @@
+/* to change:
+1. align some text vertically to bottom
+*/
+
+body {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.container {
+	width: 940px;
+	margin: 42px auto;
+}
+
+.row {
+	height: 273px;
+	padding-bottom: 63px;
+}
+
+.col3 {
+	width: 300px;
+	height: 315px;
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 21px;
+}
+
+.col3:nth-child(3n) {
+	margin-right: 0;
+}
+
+.logotype {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 42px;
+	height: 42px;
+}
+
+.content {
+	height: 63px; /* doesn't fit because of the font-size */
+}
+
+.social {
+	font-size: 21px;
+	height: 21px;
+	padding: 42px 0;
+}
+
+.icon-left {
+	width: 30px; /*change later*/
+	text-align: left;
+}
+
+.icon-right {
+	width: 30px; /*change later*/
+	text-align: right;
+	margin-right: 20px;
+}
+
+.contact {
+	float: left;
+	height: 16px;
+	align: bottom;
+	/* align to bottom */
+	padding-top: 5px;
+}
+
+a {
+	font-family: 'PT Sans', sans-serif;
+	border-bottom: 1px solid #666;
+	padding-bottom: 1px;
+    text-decoration: none;
+	color: #000;
+}
+
+a:hover {
+	border-bottom: 1px solid #666666;
+	padding-bottom: 1px;
+	text-decoration: none;
+	color: #666666;
+}
+
+.images {
+	max-width: 100%; 
+	height: auto;
+	vertical-align: bottom;
+}
+
+.images-blank {
+	height: 231px;
+	color: #666;
+	opacity: 0.5;
+}
+
+.titles {
+	margin-top: 21px;
+	margin-bottom: 0;
+/*	padding-top: 5px; */
+	height: 58px;
+	line-height: 21px;
+}
+
+.titles-bold {
+	font-weight: bold;
+}
+
+.fish {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #666666;	
+	opacity: 0.5;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+@media only screen and (max-width: 1000px) {
+	.container {
+		width: 620px;
+	}
+
+	.col3 {
+		margin-right: 0;
+	}
+
+	.col3:nth-child(3n) {
+		margin-right: 0;
+	}
+
+	.col3:nth-child(odd) {
+		margin-right: 20px;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.container {
+		width: 480px;
+	}
+
+	.col3 {
+		float: none;
+		width: auto;
+		height: auto;
+		min-height: 315px;
+		margin-right: 0;
+	}
+
+	.images-blank {
+		width: 100%;
+	}
+
+	.col3:nth-child(odd) {
+		margin-right: 0;
+	}
+}
